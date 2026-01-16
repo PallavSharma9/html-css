@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Subscribe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <div id="app">
+      <section class="bg-[#444] h-[100vh] mt-0">
+        <div
+          class="bg-[#222] mt-20 m-2 h-[700px] flex flex-col justify-center item-center gap-10 w-full md:flex-row md:max-w-[600px] md:max-h-[400px] m-auto"
+        >
+          <div class="item-center m-2">
+            <img
+              width="300px"
+              src="https://images.unsplash.com/photo-1761839257946-4616bcfafec7?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+              alt="image3"
+            />
+          </div>
+          <div class="flex flex-col mt-10">
+            <h2 class="text-white mb-4 text-xl">
+              Get diet and fitness tips in your inbox
+            </h2>
+            <p class="text-white mb-2">
+              Eat better and exercise better. Sign up for the
+            </p>
+            <h4 class="text-white mb-5">Diet&Fitness newsletter</h4>
+            <div class="flex gap- 2 items-start justify-start">
+              <input
+                class="bg-transparent px-5 py-4 text-xl w-[300px] border-solid"
+                type="email"
+                placeholder="Enter your email address"
+              />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const { createApp, ref } = Vue;
+
+      const app = createApp({
+        setup() {
+          const message = ref("Hello vue!");
+          return {
+            message,
+          };
+        },
+      });
+
+      app.component("main-component", {
+        template: `
+          
+        `,
+      });
+
+      app.mount("#app");
+    </script>
+  </body>
+</html>
