@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="relative flex justify-center p-8 bg-pink-50">
+      <div class="rounded-2xl shadow-2xl p-6 bg-white">
+        <h1 class="text-3xl font-bold font-serif mb-6">Log In</h1>
+        <p class="text-zinc-500 mb-10">
+          Log in to your account to upload or download pictures, videos or
+          music.
+        </p>
+        <input
+          type="text"
+          placeholder="Enter your email address"
+          class="p-6 border-2 border-zinc-300 w-full text-lg mb-6"
+        />
+        <div
+          class="flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between"
+        >
+          <p class="inline-block text-lg text-center text-zinc-500">
+            Forgot password
+          </p>
+          <button
+            class="w-full md:w-auto flex justify-center items-center p-6 space-x-4 font-sans font-bold text-white rounded-md px-9 bg-cyan-700 shadow-cyan-100 hover:bg-opacity-90 shadow-sm hover:shadow-lg border transition hover:-translate-y-0.5 duration-150"
+          >
+            <span>Next</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <line x1="13" y1="18" x2="19" y2="12" />
+              <line x1="13" y1="6" x2="19" y2="12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="w-full border-b border-cyan-300 mt-10"></div>
+        <p class="text-center text-sm my-6 text-zinc-400">or log in with</p>
+
+        <div
+          class="flex flex-col space-y-4 md:flex-row justify-between md:space-y-0"
+        >
+          <button
+            class="flex justify-center items-center space-x-3 border border-cyan-300 p-2 px-6 rounded-sm hover:-translate-y-0.5 hover:shadow-lg"
+          >
+            <img class="w-8" src="images/facebook.png" alt="" />
+            <span class="text-lg text-cyan-600 font-sans">Facebook</span>
+          </button>
+          <button
+            class="flex justify-center items-center space-x-3 border border-cyan-300 p-2 px-6 rounded-sm hover:-translate-y-0.5 hover:shadow-lg"
+          >
+            <img class="w-8" src="images/google.png" alt="" />
+            <span class="text-lg text-cyan-600 font-sans">Google</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Side  -->
+      <img src="images/image.jpg" class="w-[430px] hidden md:block" alt="" />
+      <div
+        class="group absolute -top-15 right-10 flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full md:bg-white md:top-4 hover:cursor-pointer hover:-translate-y-0 5 transition duration-150"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6 text-black group-hover:text-gray-600"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
